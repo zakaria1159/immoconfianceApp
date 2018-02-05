@@ -1,0 +1,61 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="details-header">
+
+    <ion-navbar color="primary">
+        <ion-title>{{agentDetails.nom}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <div>
+        <ion-grid class="details_fnt-size">
+
+            <ion-row>
+                <ion-col col-3>
+                    Address:
+                </ion-col>
+                <ion-col>
+                    {{ agentDetails.address }}
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-3>
+                    City:
+                </ion-col>
+                <ion-col>
+                    {{ agentDetails.city.name }}
+                    <!-- {{ agentDetailsCity }} -->
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-3>
+                    Nom:
+                </ion-col>
+                <ion-col>
+                    {{ agentDetails.nom }}
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-3>
+                    Prenom:
+                </ion-col>
+                <ion-col>
+                    {{ agentDetails.prenom }}
+                </ion-col>
+            </ion-row>
+
+        </ion-grid>
+    </div>
+
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "real-estate",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

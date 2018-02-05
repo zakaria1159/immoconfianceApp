@@ -1,0 +1,23 @@
+ <ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Immoconfiance</ion-title>
+        <ion-buttons start>
+            <button ion-button icon-only menuToggle>
+            	<ion-icon name ="menu"></ion-icon>
+            
+            </button>
+		</ion-buttons>
+     </ion-navbar>
+</ion-header> 
+
+<ion-content>
+    <!-- <p>Home Page</p> -->
+    <div #map id="map"></div>
+    <ion-footer no-shadow>
+    <ion-toolbar position="bottom">
+        <button ion-button full (click)="getLocation()">Ma Position <ion-icon name="pin"></ion-icon> </button>
+    </ion-toolbar>
+</ion-footer>
+     
+
+</ion-content>
