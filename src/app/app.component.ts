@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { AboutPage } from '../pages/about/about';
 
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -31,6 +32,11 @@ goToAbout(params){
 goToHome(params){
   if (!params) params = {};
   this.navCtrl.setRoot(TabsPage);
+
+}
+goToContact(params){
+ if (!params) params = {};
+  
 
 }}
 

@@ -16,46 +16,20 @@
 <ion-content padding>
 
     <div>
-        <ion-grid class="details_fnt-size">
-
-            <ion-row>
-                <ion-col col-3>
-                    Address:
-                </ion-col>
-                <ion-col>
-                    {{ agentDetails.address }}
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col col-3>
-                    City:
-                </ion-col>
-                <ion-col>
-                    {{ agentDetails.city.name }}
-                    <!-- {{ agentDetailsCity }} -->
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col col-3>
-                    Nom:
-                </ion-col>
-                <ion-col>
-                    {{ agentDetails.nom }}
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col col-3>
-                    Prenom:
-                </ion-col>
-                <ion-col>
-                    {{ agentDetails.prenom }}
-                </ion-col>
-            </ion-row>
-
-        </ion-grid>
+       <ion-card>
+  <img src="img/immologo.png"/>
+  <ion-card-content>
+    <ion-card-title>
+       <span class="txt-pedding"></span>{{agentDetails.nom}}
+      </ion-card-title>
+    <p>
+      <span class="txt-pedding"></span>{{agentDetails.address}}
+    </p>
+    <p>
+       <ion-badge color="secondary"> {{agentDetails.city.name}} </ion-badge>
+    </p>
+  </ion-card-content>
+</ion-card>
     </div>
 
 </ion-content>
